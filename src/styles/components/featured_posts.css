@@ -1,0 +1,129 @@
+.featured-posts__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1440px;
+  margin: 0 80px;
+}
+
+/* Левый блок - Featured Post */
+.featured-post__title {
+  font: var(--font-h2);
+  color: var(--color-black);
+  margin-bottom: 32px;
+}
+
+.post-wrapper {
+  width: 55vw;
+  background: var(--color-white);
+  border: 1px solid rgb(109 110 118 / 30%);
+}
+
+.post-card--featured {
+  padding: 32px;
+}
+
+.post-card__image {
+  object-fit: cover;
+  margin-bottom: 32px;
+}
+
+.post-card__meta {
+  color: var(--color-medium-grey);
+  margin-bottom: 16px;
+}
+
+.post-card__author-name {
+  font: var(--font-label);
+  color: var(--color-purple);
+}
+
+.featured-info {
+  height: 152px;
+  margin-bottom: 32px;
+}
+
+.featured-info__title {
+  font: var(--font-h3);
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.featured-info__description {
+  font: var(--font-body-01);
+  color: var(--color-medium-grey);
+  line-height: 28px;
+}
+
+/* Правый блок - All Posts */
+.all-posts__title {
+  font: var(--font-h2);
+  color: var(--color-black);
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.post-item {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-item:hover {
+  background-color: var(--color-light-yellow);
+}
+
+.post-item__meta {
+  font: var(--font-label);
+  color: var(--color-medium-grey);
+  margin-bottom: 8px;
+}
+
+.post-item__title {
+  font: var(--font-h4);
+  color: var(--color-black);
+}
+
+.all-posts__view-all {
+  color: var(--color-purple);
+  font: var(--font-body-01);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Кнопка Read More */
+.button--read-more {
+  background: var(--color-yellow);
+  color: var(--color-black);
+  padding: 16px 32px;
+  border: none;
+  font: var(--font-label);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button--read-more:hover {
+  background: #e6b800;
+}
+
+.allpost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.post-item__author {
+  color: var(--color-purple);
+}
