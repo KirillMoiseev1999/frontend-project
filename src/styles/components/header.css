@@ -1,17 +1,17 @@
 .header {
-  background: var(--color-Black);
-  height: 80px; 
+  background: var(--color-black);
+  height: 80px;
   display: flex;
   align-items: center;
-  margin: 0; 
+  margin: 0;
   padding: 0 80px 0 83px; /* объединяем padding */
-  width: 100%; 
+  width: 100%;
 }
 
 .container {
-  max-width: 1300px; 
+  max-width: 1300px;
   margin: 0 auto; /* добавляем auto для центрирования */
-  padding: 0; 
+  padding: 0;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%; 
+  height: 100%;
 }
 
 .header__logo {
@@ -29,7 +29,7 @@
 }
 
 .header__logo-image {
-  height: 32px; 
+  height: 32px;
   width: auto;
 }
 
@@ -40,7 +40,7 @@
 .header__bloc {
   display: flex;
   align-items: center;
-  height: 100%; 
+  height: 100%;
 }
 
 .header__nav-list {
@@ -52,19 +52,19 @@
 }
 
 .header__nav-link {
-  color: white; 
+  color: white;
   text-decoration: none;
   font: var(--font-body-01);
   transition: color 0.3s ease;
 }
 
 .header__nav-link:hover {
-  color: var(--color-Yellow); 
+  color: var(--color-yellow);
 }
 
 .button--subscribe {
-  background: white; 
-  color: var(--color-Black); 
+  background: white;
+  color: var(--color-black);
   padding: 0.75rem 2.5rem;
   border: none;
   border-radius: 0;
@@ -76,6 +76,6 @@
 }
 
 .button--subscribe:hover {
-  background: var(--color-Yellow);  
-  color: var(--color-Black);
+  background: var(--color-yellow);
+  color: var(--color-black);
 }

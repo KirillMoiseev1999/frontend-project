@@ -1,11 +1,11 @@
 :root {
   /* Цвета */
-  --color-Black: #232536;
-  --color-Yellow: #FFD050;
-  --color-Purple: #592EA9;
-  --color-DarkGrey: #4C4C4C;
-  --color-MediumGrey: #6D6E76;
-  --color-LightGrey: #F4F4F4;
-  --color-Lavender: #F4F0F8;
-  --color-LightYellow: #FBF6EA;  
+  --color-black: #232536;
+  --color-yellow: #ffd050;
+  --color-purple: #592ea9;
+  --color-dark-grey: #4c4c4c;
+  --color-medium-grey: #6d6e76;
+  --color-light-grey: #f4f4f4;
+  --color-lavender: #f4f0f8;
+  --color-light-yellow: #fbf6ea;
 }

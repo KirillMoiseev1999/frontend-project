@@ -1,4 +1,4 @@
-:root{
+:root {
   --font-display: 700 56px/64px 'Sen', sans-serif;
   --font-h1: 700 48px/64px 'Sen', sans-serif;
   --font-h2: 700 36px/48px 'Sen', sans-serif;
@@ -6,20 +6,50 @@
   --font-h4: 700 24px/32px 'Sen', sans-serif;
   --font-h5: 700 20px/32px 'Sen', sans-serif;
   --font-h6: 700 16px/24px 'Sen', sans-serif;
-  
+
   /* Типографика - Body & Labels */
   --font-body-01: 400 16px/28px 'Sen', sans-serif;
   --font-body-02: 400 14px/20px 'Sen', sans-serif;
   --font-label: 500 14px/20px 'Sen', sans-serif;
 }
+
 /* Классы для типографики */
-.display { font: var(--font-display); }
-.h1 { font: var(--font-h1); }
-.h2 { font: var(--font-h2); }
-.h3 { font: var(--font-h3); }
-.h4 { font: var(--font-h4); }
-.h5 { font: var(--font-h5); }
-.h6 { font: var(--font-h6); }
-.body-01 { font: var(--font-body-01); }
-.body-02 { font: var(--font-body-02); }
-.label { font: var(--font-label); }
+.display {
+  font: var(--font-display);
+}
+
+.h1 {
+  font: var(--font-h1);
+}
+
+.h2 {
+  font: var(--font-h2);
+}
+
+.h3 {
+  font: var(--font-h3);
+}
+
+.h4 {
+  font: var(--font-h4);
+}
+
+.h5 {
+  font: var(--font-h5);
+}
+
+.h6 {
+  font: var(--font-h6);
+}
+
+.body-01 {
+  font: var(--font-body-01);
+}
+
+.body-02 {
+  font: var(--font-body-02);
+}
+
+.label {
+  font: var(--font-label);
+}
