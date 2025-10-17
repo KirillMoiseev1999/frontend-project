@@ -14,9 +14,11 @@
     </style>
     <link rel="stylesheet" href="src/styles/normalize.css" />
     <link rel="stylesheet" href="src/styles/colors/colors.css" />
-    <link rel="stylesheet" href="src/styles/components/header.css" />
-
     <link rel="stylesheet" href="src/styles/global/fonts.css" />
+
+    <link rel="stylesheet" href="src/styles/components/header.css" />
+    <link rel="stylesheet" href="src/styles/components/main.css" />
+    <link rel="stylesheet" href="src/styles/components/hero.css" />
   </head>
 
   <body>
@@ -59,6 +61,42 @@
         </div>
       </div>
     </header>
+
+    <main class="main">
+      <!-- Блок с картинкой -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <!-- Блок с текстом -->
+            <div class="hero__text-block">
+              <div class="hero__category">POSTED ON <span class="hero__category-accent">STARTUP</span></div>
+
+              <h1 class="hero__title">Step-by-step guide to choosing great font pairs</h1>
+
+              <div class="hero__meta">
+                By <span class="hero__author">James West</span> | <span class="hero__date">May 23, 2022</span>
+              </div>
+
+              <p class="hero__description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br />
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+
+              <div class="hero__actions">
+                <button class="button button--read-more">
+                  Read More
+                  <span class="button__arrow">></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="skipcontainer"></div>
+
+      <!--  -->
+    </main>
 
     <script type="module" src="/src/index.js"></script>
   </body>
