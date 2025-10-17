@@ -1,4 +1,11 @@
 :root {
-  --color-white: #e3e3e3;
-  --color-black: #1d1d1d;
+  /* Цвета */
+  --color-Black: #232536;
+  --color-Yellow: #FFD050;
+  --color-Purple: #592EA9;
+  --color-DarkGrey: #4C4C4C;
+  --color-MediumGrey: #6D6E76;
+  --color-LightGrey: #F4F4F4;
+  --color-Lavender: #F4F0F8;
+  --color-LightYellow: #FBF6EA;  
 }

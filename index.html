@@ -12,10 +12,57 @@
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
     </style>
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/colors/colors.css">
+    <link rel="stylesheet" href="src/styles/components/header.css">
+    
+    <link rel="stylesheet" href="src/styles/global/fonts.css">
+    
   </head>
 
   <body>
-    <h1>Hello world!</h1>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <!-- Логотип SVG -->
+          <a href="#" class="header__logo">
+            <img src="src/image/Logo.svg" alt="Finsweet" class="header__logo-image">
+          </a>
+
+          <div class="header__bloc">
+            <!-- Навигация -->
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Blog</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">About us</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- разрыв -->
+             <div class="space"></div>
+
+            <!-- Кнопка подписки -->
+            <div class="header__actions">
+              <button class="button button--subscribe">Subscribe</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>

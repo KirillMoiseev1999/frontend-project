@@ -1,0 +1,85 @@
+.header {
+  background: var(--color-Black);
+  height: 80px; 
+  display: flex;
+  align-items: center;
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+  padding-left: 83px;
+  padding-right: 80px;
+}
+
+.container {
+  max-width: 1300px; 
+  margin: 0; 
+  padding: 0; 
+  width: 100%;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: 28px;
+}
+
+.header__logo-image {
+  height: 32px; 
+  width: auto;
+}
+.space{
+  width: 32px;
+}
+.header__bloc{
+  display: flex;
+  align-items: center;
+  
+  height: 100%; 
+}
+
+
+.header__nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-link {
+  color: white; 
+  text-decoration: none;
+  font: var(--font-body-01);
+  transition: color 0.3s ease;
+}
+
+.header__nav-link:hover {
+  color: var(--color-Yellow); 
+}
+
+
+.button--subscribe {
+  background: white; 
+  color: var(--color-Black); 
+  padding: 0.75rem 2.5rem;
+  border: none;
+  border-radius: 0;
+  font: var(--font-label);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 56px;
+}
+
+.button--subscribe:hover {
+  background: var(--color-Yellow);  
+  color: var(--color-Black);
+}
