@@ -1,0 +1,111 @@
+.containerabout {
+  height: 500px;
+  width: 100%;
+  background: var(--color-lavender);
+}
+
+.about-section {
+  position: relative;
+  margin: 0 80px;
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.about-section__strip {
+  right: 0;
+  height: 23px;
+  z-index: 1;
+}
+
+.about-section__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1440px;
+  margin: 0 80px;
+  height: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Левый блок - About Us */
+.about-us {
+  padding: 96px 0;
+}
+
+.about-us__label {
+  font: var(--font-label);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.about-us__title {
+  font: var(--font-h2);
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.about-us__description {
+  font: var(--font-body-01);
+  color: var(--color-medium-grey);
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+/* Правый блок - Our Mission */
+.our-mission {
+  padding: 96px 0;
+}
+
+.our-mission__label {
+  font: var(--font-label);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.our-mission__title {
+  font: var(--font-h3);
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.our-mission__description {
+  font: var(--font-body-01);
+  color: var(--color-medium-grey);
+  line-height: 28px;
+}
+
+/* Кнопка Read More */
+
+/* Фиолетовая ссылка Read More */
+.link--purple {
+  color: var(--color-purple);
+  font: var(--font-label);
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.link--purple:hover {
+  color: var(--color-black);
+}
+
+.link__arrow {
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.link--purple:hover .link__arrow {
+  transform: translateX(4px);
+}
