@@ -1,0 +1,101 @@
+.join-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 256px;
+}
+
+.join-team .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.join-team__content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.join-team__card {
+  width: 100%;
+  max-width: 414px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.join-team__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.join-team__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: var(--color-medium-grey);
+  margin-bottom: 32px;
+}
+
+.button--join {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  width: 174px;
+  height: 56px;
+  border: none;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button--join:hover {
+  background: #e6b800;
+}
+
+/* Адаптивность */
+@media (width <= 768px) {
+  .join-team {
+    padding: 40px 20px;
+  }
+
+  .join-team__card {
+    max-width: 100%;
+    height: auto;
+    min-height: 256px;
+  }
+
+  .join-team__title {
+    font-size: 28px;
+  }
+}
+
+@media (width <= 480px) {
+  .join-team__title {
+    font-size: 24px;
+  }
+
+  .join-team__description {
+    font-size: 14px;
+  }
+}
