@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="src/styles/components/hero.css" />
     <link rel="stylesheet" href="src/styles/components/featured_posts.css" />
     <link rel="stylesheet" href="src/styles/components/about.css" />
+    <link rel="stylesheet" href="src/styles/components/categories.css" />
   </head>
 
   <body>
@@ -223,7 +224,51 @@
       </section>
 
       <div class="skipcontainer"></div>
-      <!--Блок с О нас  -->
+
+      <!--Блок с Категориями  -->
+      <section class="categories">
+        <div class="container">
+          <h2 class="categories__title">Choose A Category</h2>
+
+          <div class="categories__grid">
+            <!-- Категория 1 -->
+            <div class="category-card">
+              <div class="category-card__icon">
+                <img src="/public/image/icon_busness.svg" alt="Business" class="category-card__image" />
+              </div>
+              <h3 class="category-card__title">Business</h3>
+              <p class="category-card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+
+            <!-- Категория 2 -->
+            <div class="category-card">
+              <div class="category-card__icon">
+                <img src="/public/image/icon_srartup.svg" alt="Startup" class="category-card__image" />
+              </div>
+              <h3 class="category-card__title">Startup</h3>
+              <p class="category-card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+
+            <!-- Категория 3 -->
+            <div class="category-card">
+              <div class="category-card__icon">
+                <img src="/public/image/icon_economy.svg" alt="Economy" class="category-card__image" />
+              </div>
+              <h3 class="category-card__title">Economy</h3>
+              <p class="category-card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+
+            <!-- Категория 4 -->
+            <div class="category-card">
+              <div class="category-card__icon">
+                <img src="/public/image/icon_technology.svg" alt="Technology" class="category-card__image" />
+              </div>
+              <h3 class="category-card__title">Technology</h3>
+              <p class="category-card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="/src/index.js"></script>

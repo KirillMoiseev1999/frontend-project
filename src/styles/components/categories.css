@@ -1,0 +1,81 @@
+.categories {
+  padding: 0 80px;
+}
+
+.categories__title {
+  font: var(--font-h2);
+  color: var(--color-black);
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.categories__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки для 1290px */
+  gap: 32px;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: var(--color-white);
+  border: 1px solid rgb(109 110 118 / 30%);
+  padding: 32px;
+  height: 228px;
+  width: 100%; /* Занимает всю доступную ширину колонки */
+  max-width: 296px; /* Максимальная ширина как в макете */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.category-card:hover {
+  background: var(--color-yellow);
+  border-color: var(--color-yellow);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+}
+
+.category-card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.category-card__title {
+  font: var(--font-h4);
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.category-card__description {
+  font: var(--font-body-02);
+  color: var(--color-medium-grey);
+  line-height: 20px;
+}
+
+/* Адаптивность для мобильных */
+@media (width <= 1290px) {
+  .categories__grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+    justify-items: center;
+  }
+}
+
+@media (width <= 768px) {
+  .categories__grid {
+    grid-template-columns: 1fr; /* 1 колонка на мобильных */
+  }
+
+  .categories {
+    padding: 40px;
+  }
+}
