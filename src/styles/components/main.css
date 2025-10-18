@@ -12,3 +12,7 @@ main {
 .skipcontainer {
   height: 128px;
 }
+
+.skipcontainer96 {
+  height: 96px;
+}
