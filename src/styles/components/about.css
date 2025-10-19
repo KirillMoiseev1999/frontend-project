@@ -1,5 +1,6 @@
 .containerabout {
-  height: 500px;
+  height: auto;
+  min-height: 500px;
   width: 100%;
   background: var(--containerabout);
 }
@@ -7,7 +8,8 @@
 .about-section {
   position: relative;
   margin: 0 80px;
-  height: 523px;
+  height: auto;
+  min-height: 523px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -24,13 +26,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   max-width: 1440px;
+  width: 90%;
   margin: 0 80px;
-  height: 500px;
+  height: auto;
+  min-height: 500px;
   position: relative;
   z-index: 2;
 }
 
-/* Левый блок - About Us */
 .about-us {
   padding: 96px 0;
 }
@@ -57,7 +60,6 @@
   margin-bottom: 32px;
 }
 
-/* Правый блок - Our Mission */
 .our-mission {
   padding: 96px 0;
 }
@@ -83,9 +85,6 @@
   line-height: 28px;
 }
 
-/* Кнопка Read More */
-
-/* Фиолетовая ссылка Read More */
 .link--purple {
   color: var(--color-purple);
   font: var(--font-label);
@@ -108,4 +107,177 @@
 
 .link--purple:hover .link__arrow {
   transform: translateX(4px);
+}
+
+/* ===== МЕДИА ЗАПРОСЫ ДЛЯ ABOUT SECTION ===== */
+
+/* Большие планшеты и маленькие десктопы (1024px - 1289px) */
+@media (width <= 1289px) {
+  .containerabout {
+    min-height: 450px;
+  }
+
+  .about-section {
+    margin: 0 60px;
+    min-height: 480px;
+  }
+
+  .about-section__content {
+    margin: 0 60px;
+    gap: 60px;
+    min-height: 450px;
+  }
+
+  .about-us,
+  .our-mission {
+    padding: 80px 0;
+  }
+}
+
+@media (width <= 1060px) {
+  .about-section__strip {
+    display: none;
+  }
+}
+
+/* Планшеты (768px - 1023px) */
+@media (width <= 1023px) {
+  .containerabout {
+    min-height: 400px;
+  }
+
+  .about-section {
+    margin: 0 40px;
+    min-height: 430px;
+  }
+
+  .about-section__content {
+    margin: 0 40px;
+    gap: 40px;
+    min-height: 400px;
+  }
+
+  .about-us,
+  .our-mission {
+    padding: 60px 0;
+  }
+
+  .about-us__title {
+    font-size: 1.5rem;
+  }
+
+  .our-mission__title {
+    font-size: 1.3rem;
+  }
+
+  .about-us__description,
+  .our-mission__description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+/* Большие мобильные (576px - 767px) */
+@media (width <= 767px) {
+  .containerabout {
+    min-height: auto;
+  }
+
+  .about-section {
+    margin: 0 20px;
+    min-height: auto;
+    align-items: center;
+  }
+
+  .about-section__content {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+    gap: 40px;
+    min-height: auto;
+  }
+
+  .about-us,
+  .our-mission {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .about-us__label,
+  .our-mission__label {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  .about-us__title {
+    font-size: 1.3rem;
+  }
+
+  .our-mission__title {
+    font-size: 1.1rem;
+  }
+
+  .about-us__description,
+  .our-mission__description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .link--purple {
+    justify-content: center;
+  }
+}
+
+/* Мобильные (375px - 575px) */
+@media (width <= 575px) {
+  .about-section {
+    margin: 0 15px;
+  }
+
+  .about-section__content {
+    margin: 0 15px;
+    gap: 32px;
+  }
+
+  .about-us,
+  .our-mission {
+    padding: 32px 0;
+  }
+
+  .about-us__title {
+    font-size: 1.2rem;
+  }
+
+  .our-mission__title {
+    font-size: 1rem;
+  }
+
+  .about-us__description,
+  .our-mission__description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Маленькие мобильные (до 374px) */
+@media (width <= 374px) {
+  .about-section {
+    margin: 0 10px;
+  }
+
+  .about-section__content {
+    margin: 0 10px;
+    gap: 24px;
+  }
+
+  .about-us,
+  .our-mission {
+    padding: 24px 0;
+  }
+
+  .about-us__title {
+    font-size: 1.1rem;
+  }
+
+  .our-mission__title {
+    font-size: 0.9rem;
+  }
 }

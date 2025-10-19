@@ -1,6 +1,7 @@
 .logos-section {
   padding: 0 80px;
-  height: 52px;
+  height: auto;
+  min-height: 52px;
   display: flex;
   align-items: center;
 }
@@ -13,10 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 52px;
+  height: auto;
+  min-height: 52px;
 }
 
-/* Текст "Featured in" */
 .logos-section__label {
   width: 135px;
   height: 52px;
@@ -42,7 +43,6 @@
   opacity: 0.6;
 }
 
-/* Блок с логотипами */
 .logos-wrapper {
   flex: 1;
   margin-left: 87px;
@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 48px; /* Отступ между логотипами */
+  gap: 48px;
   width: 100%;
   height: 32px;
 }
@@ -83,36 +83,124 @@
   color: black;
 }
 
-/* Адаптивность */
-@media (width <= 1290px) {
+/* ===== МЕДИА ЗАПРОСЫ ===== */
+
+/* Большие планшеты (1024px - 1289px) */
+@media (width <= 1289px) {
+  .logos-section {
+    padding: 0 60px;
+  }
+
+  .logos-wrapper {
+    margin-left: 60px;
+  }
+
   .logos-wrapper__list {
     gap: 32px;
-    justify-content: center;
   }
 }
 
-@media (width <= 768px) {
+/* Планшеты (768px - 1023px) */
+@media (width <= 1023px) {
   .logos-section {
     padding: 0 40px;
-    height: auto;
+  }
+
+  .logos-wrapper {
+    margin-left: 40px;
+  }
+
+  .logos-wrapper__list {
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .feature_in {
+    font-size: 20px;
+  }
+
+  .we_are {
+    font-size: 12px;
+  }
+}
+
+/* Большие мобильные (576px - 767px) */
+@media (width <= 767px) {
+  .logos-section {
+    padding: 0 20px;
     flex-direction: column;
     gap: 20px;
   }
 
   .logos-section__content {
     flex-direction: column;
-    height: auto;
     gap: 20px;
+    text-align: center;
+  }
+
+  .logos-section__label {
+    width: 100%;
+    height: auto;
+    align-items: center;
   }
 
   .logos-wrapper {
     margin-left: 0;
     width: 100%;
+    height: auto;
   }
 
   .logos-wrapper__list {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 20px;
+    height: auto;
+    min-height: 32px;
+  }
+
+  .logo-item {
+    height: 28px;
+  }
+}
+
+/* Мобильные (375px - 575px) */
+@media (width <= 575px) {
+  .logos-section {
+    padding: 0 15px;
+  }
+
+  .logos-wrapper__list {
+    gap: 16px;
+  }
+
+  .feature_in {
+    font-size: 18px;
+  }
+
+  .we_are {
+    font-size: 11px;
+  }
+
+  .logo-item {
+    height: 24px;
+  }
+}
+
+/* Маленькие мобильные (до 374px) */
+@media (width <= 374px) {
+  .logos-section {
+    padding: 0 10px;
+  }
+
+  .logos-wrapper__list {
+    gap: 12px;
+  }
+
+  .feature_in {
+    font-size: 16px;
+  }
+
+  .logo-item {
+    height: 20px;
   }
 }

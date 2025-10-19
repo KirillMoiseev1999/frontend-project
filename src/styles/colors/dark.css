@@ -7,8 +7,6 @@
   --post-card: rgb(18 18 18);
   --containerabout: var(--color-dark-grey);
   --border: var(--color-purple);
-  --bg-secondary: var(--color-dark-grey);
-  --text-secondary: var(--color-light-grey);
   --border-color: rgb(255 255 255 / 10%);
 }
 

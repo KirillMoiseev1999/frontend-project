@@ -1,5 +1,6 @@
 .testimonials {
-  height: 464px;
+  height: auto;
+  min-height: 464px;
   width: 100%;
   padding: 0 80px;
   display: flex;
@@ -16,10 +17,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 464px;
+  height: auto;
+  min-height: 464px;
 }
 
-/* Левая часть - Heading */
 .testimonials__heading {
   margin-left: 8vw;
   margin-top: 92px;
@@ -59,7 +60,6 @@
   color: var(--text-primary);
 }
 
-/* Вертикальная разделительная линия */
 .testimonials__divider {
   border: 1px solid #6d6e76;
   height: 310px;
@@ -67,7 +67,6 @@
   margin: 80px 6vw 0 5vw;
 }
 
-/* Правая часть - Messages & Profile */
 .testimonials__main {
   display: flex;
   flex-direction: column;
@@ -123,7 +122,6 @@
   color: var(--color-medium-grey);
 }
 
-/* Кнопки навигации */
 .testimonials__navigation {
   display: flex;
   gap: 16px;
@@ -138,19 +136,93 @@
 }
 
 .testimonials__btn:hover {
-  filter: invert(1); /* Инвертирует все цвета */
+  filter: invert(1);
 }
 
-/* Адаптивность */
-@media (width <= 1290px) {
+/* ===== МЕДИА ЗАПРОСЫ ===== */
+
+/* Большие планшеты (1024px - 1289px) */
+@media (width <= 1289px) {
+  .testimonials {
+    padding: 0 60px;
+  }
+
   .testimonials__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    min-height: 400px;
+  }
+
+  .testimonials__heading {
+    margin-left: 4vw;
+    margin-top: 60px;
+    width: 300px;
+  }
+
+  .testimonials__title {
+    font-size: 32px;
+  }
+
+  .testimonials__divider {
+    margin: 60px 4vw 0;
+    height: 250px;
+  }
+
+  .testimonials__main {
+    margin-top: 60px;
+  }
+
+  .testimonials__quote {
+    margin-bottom: 80px;
+    font-size: 22px;
+  }
+
+  .testimonials_lowbar {
+    width: 400px;
+  }
+}
+
+/* Планшеты (768px - 1023px) */
+@media (width <= 1023px) {
+  .testimonials {
+    padding: 0 40px;
+  }
+
+  .testimonials__content {
+    flex-direction: column;
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .testimonials__heading {
+    margin: 0 auto;
     text-align: center;
+    width: 100%;
+    max-width: 500px;
   }
 
   .testimonials__divider {
     display: none;
+  }
+
+  .testimonials__main {
+    margin: 40px auto 0;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .testimonials__message {
+    padding-right: 0;
+  }
+
+  .testimonials__quote {
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
+
+  .testimonials_lowbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
   .testimonials__navigation {
@@ -158,17 +230,101 @@
   }
 }
 
-@media (width <= 768px) {
+/* Большие мобильные (576px - 767px) */
+@media (width <= 767px) {
   .testimonials {
-    padding: 0 40px;
-    height: auto;
+    padding: 0 20px;
+  }
+
+  .testimonials__content {
+    padding: 30px 0;
+  }
+
+  .testimonials__heading {
+    max-width: 100%;
   }
 
   .testimonials__title {
     font-size: 28px;
   }
 
+  .testimonials__label {
+    font-size: 14px;
+  }
+
+  .testimonials__subtitle {
+    font-size: 14px;
+  }
+
+  .testimonials__main {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
   .testimonials__quote {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .testimonials__name {
     font-size: 20px;
+  }
+
+  .testimonials__location {
+    font-size: 14px;
+  }
+}
+
+/* Мобильные (375px - 575px) */
+@media (width <= 575px) {
+  .testimonials {
+    padding: 0 15px;
+  }
+
+  .testimonials__content {
+    padding: 20px 0;
+  }
+
+  .testimonials__title {
+    font-size: 24px;
+  }
+
+  .testimonials__label {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+  }
+
+  .testimonials__quote {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .testimonials__profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimoials_text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .testimonials__name {
+    font-size: 18px;
+  }
+}
+
+/* Маленькие мобильные (до 374px) */
+@media (width <= 374px) {
+  .testimonials {
+    padding: 0 10px;
+  }
+
+  .testimonials__title {
+    font-size: 22px;
+  }
+
+  .testimonials__quote {
+    font-size: 15px;
   }
 }

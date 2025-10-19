@@ -13,7 +13,6 @@
   flex-direction: column;
 }
 
-/* 1. Лого и навигация */
 .footer__nav-section {
   display: flex;
   flex-direction: row;
@@ -40,7 +39,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  color: var(--color-light);
+  color: var(--color-white);
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -49,10 +48,10 @@
   opacity: 0.7;
 }
 
-/* 2. CTA секция */
 .footer__cta {
   background: rgb(255 255 255 / 5%);
-  height: 256px;
+  height: auto;
+  min-height: 256px;
   padding: 80px 4vw;
   display: flex;
   align-items: center;
@@ -123,7 +122,6 @@
   background: #e6b800;
 }
 
-/* 3. Контактная информация и соцсети */
 .footer__info {
   display: flex;
   flex-direction: row;
@@ -155,33 +153,72 @@
 .footer__social .social-link img {
   width: 26px;
   height: 26px;
-  filter: grayscale(10%) brightness(2); /* Полностью серые + немного темнее */
+  filter: grayscale(10%) brightness(2);
   transition: filter 0.3s ease;
 }
 
 .footer__social .social-link:hover img {
-  filter: grayscale(10%) brightness(0.5); /* Цветные при ховере */
+  filter: grayscale(10%) brightness(0.5);
 }
 
-/* Адаптивность */
-@media (width <= 1290px) {
-  .footer__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
+/* ===== МЕДИА ЗАПРОСЫ ===== */
+
+/* Большие планшеты (1024px - 1289px) */
+@media (width <= 1289px) {
+  .footer {
+    padding: 50px 60px;
+  }
+
+  .footer__cta-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__subscribe {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer__input {
+    width: 60%;
+  }
+
+  .button--subscribe-footer {
+    width: 35%;
+  }
+}
+
+/* Планшеты (768px - 1023px) */
+@media (width <= 1023px) {
+  .footer {
+    padding: 40px;
+  }
+
+  .footer__nav-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
   }
 
   .footer__nav-list {
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-}
 
-@media (width <= 768px) {
-  .footer {
-    padding: 40px 20px;
+  .footer__cta {
+    padding: 60px 30px;
+    margin-bottom: 40px;
+  }
+
+  .footer__cta-title {
+    font-size: 28px;
+    text-align: center;
   }
 
   .footer__subscribe {
     flex-direction: column;
+    gap: 15px;
   }
 
   .footer__input {
@@ -190,5 +227,124 @@
 
   .button--subscribe-footer {
     width: 100%;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+/* Большие мобильные (576px - 767px) */
+@media (width <= 767px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer__cta {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+  }
+
+  .footer__cta-title {
+    font-size: 24px;
+  }
+
+  .footer__nav-list {
+    gap: 12px;
+  }
+
+  .footer__nav-link {
+    font-size: 14px;
+  }
+
+  .footer__input {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .button--subscribe-footer {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .footer__address,
+  .footer__email,
+  .footer__phone {
+    font-size: 14px;
+  }
+}
+
+/* Мобильные (375px - 575px) */
+@media (width <= 575px) {
+  .footer {
+    padding: 25px 15px;
+  }
+
+  .footer__cta {
+    padding: 30px 15px;
+  }
+
+  .footer__cta-title {
+    font-size: 20px;
+  }
+
+  .footer__nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer__input {
+    height: 45px;
+    padding: 0 12px;
+  }
+
+  .button--subscribe-footer {
+    height: 45px;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .footer__social {
+    gap: 12px;
+  }
+
+  .footer__social .social-link img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Маленькие мобильные (до 374px) */
+@media (width <= 374px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer__cta {
+    padding: 25px 10px;
+  }
+
+  .footer__cta-title {
+    font-size: 18px;
+  }
+
+  .footer__input {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .button--subscribe-footer {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .footer__address,
+  .footer__email,
+  .footer__phone {
+    font-size: 13px;
   }
 }
