@@ -28,11 +28,6 @@
   height: 28px;
 }
 
-.header__logo-image {
-  height: 32px;
-  width: auto;
-}
-
 .space {
   width: 32px; /* отступ между навигацией и кнопкой */
 }
@@ -41,6 +36,8 @@
   display: flex;
   align-items: center;
   height: 100%;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .header__nav-list {

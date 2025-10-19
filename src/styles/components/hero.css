@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('http://localhost:5173/frontend-project/image/man.svg');
+  background-image: url('../../../man.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
