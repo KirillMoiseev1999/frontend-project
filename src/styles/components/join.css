@@ -73,7 +73,7 @@
   background: #e6b800;
 }
 
-/* Адаптивность */
+/* ===== МЕДИА ЗАПРОСЫ ДЛЯ JOIN ===== */
 @media (width <= 768px) {
   .join-team {
     padding: 40px 20px;

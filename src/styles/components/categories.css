@@ -11,7 +11,7 @@
 
 .categories__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки для 1290px */
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   max-width: 1290px;
   margin: 0 auto;
@@ -22,8 +22,8 @@
   border: 1px solid rgb(109 110 118 / 30%);
   padding: 32px;
   height: 228px;
-  width: 100%; /* Занимает всю доступную ширину колонки */
-  max-width: 296px; /* Максимальная ширина как в макете */
+  width: 100%;
+  max-width: 296px;
   transition: all 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
@@ -62,17 +62,17 @@
   line-height: 20px;
 }
 
-/* Адаптивность для мобильных */
+/* ===== МЕДИА ЗАПРОСЫ ДЛЯ CATEGORIES SECTION ===== */
 @media (width <= 1290px) {
   .categories__grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 }
 
 @media (width <= 768px) {
   .categories__grid {
-    grid-template-columns: 1fr; /* 1 колонка на мобильных */
+    grid-template-columns: 1fr;
   }
 
   .categories {

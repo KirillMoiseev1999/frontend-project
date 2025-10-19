@@ -18,10 +18,9 @@
 .hero__text-block {
   width: 804px;
   height: 400px;
-  position: relative; /* Для позиционирования кнопки */
+  position: relative;
 }
 
-/* 1. Posted on startup */
 .hero__category {
   font: var(--font-label);
   color: var(--bg-primary);
@@ -35,14 +34,12 @@
   font-weight: 600;
 }
 
-/* 2. Заголовок */
 .hero__title {
   font: var(--font-h1);
   color: var(--bg-primary);
   margin-bottom: 24px;
 }
 
-/* 3. Автор и дата */
 .hero__meta {
   font: var(--font-body-01);
   color: var(--bg-primary);
@@ -59,7 +56,6 @@
   font-weight: 300;
 }
 
-/* 4. Описание */
 .hero__description {
   font: var(--font-body-01);
   color: var(--bg-primary);
@@ -68,7 +64,6 @@
   font-weight: 100;
 }
 
-/* 5. Кнопка */
 .hero__actions {
   position: absolute;
   bottom: 0;
@@ -89,7 +84,7 @@
 }
 
 .button--read-more:hover {
-  background: #e6b800; /* Темнее желтый при ховере */
+  background: #e6b800;
 }
 
 .button__arrow {

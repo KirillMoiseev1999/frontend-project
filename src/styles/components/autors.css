@@ -94,7 +94,7 @@
   height: 16px;
 }
 
-/* Адаптивность */
+/* ===== МЕДИА ЗАПРОСЫ ДЛЯ AUTORS SECTION ===== */
 @media (width <= 1290px) {
   .authors-section__grid {
     grid-template-columns: repeat(2, 1fr);

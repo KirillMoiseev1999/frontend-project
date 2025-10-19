@@ -79,7 +79,6 @@
   margin-bottom: 32px;
 }
 
-/* Кнопка Discover */
 .button--discover {
   background: var(--color-yellow);
   color: var(--color-black);
@@ -104,7 +103,7 @@
   font-weight: 700;
 }
 
-/* Адаптивность для 1290px */
+/* ===== МЕДИА ЗАПРОСЫ ДЛЯ STORY SECTION ===== */
 @media (width <= 1290px) {
   .story-section__image {
     width: 60%;
@@ -140,6 +139,6 @@
   }
 
   .story-section__info {
-    margin-top: -100px; /* Частичное перекрытие */
+    margin-top: -100px;
   }
 }
