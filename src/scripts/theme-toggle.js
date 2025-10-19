@@ -4,7 +4,7 @@ class ThemeSwitcher {
   constructor() {
     this.themeToggle = document.getElementById('themeToggle');
     this.themeIcon = this.themeToggle.querySelector('.theme-toggle__icon');
-    this.currentTheme = localStorage.getItem('theme') || 'light';
+    this.currentTheme = localStorage.getItem('theme') || 'light'; // eslint-disable-line no-undef
 
     this.init();
   }
@@ -34,7 +34,7 @@ class ThemeSwitcher {
   }
 
   saveTheme() {
-    localStorage.setItem('theme', this.currentTheme);
+    localStorage.setItem('theme', this.currentTheme); // eslint-disable-line no-undef
   }
 }
 
