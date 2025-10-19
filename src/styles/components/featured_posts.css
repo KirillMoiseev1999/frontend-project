@@ -9,7 +9,7 @@
 /* Левый блок - Featured Post */
 .featured-post__title {
   font: var(--font-h2);
-  color: var(--color-black);
+  color: var(--text-primary);
   margin-bottom: 32px;
 }
 
@@ -21,6 +21,7 @@
 
 .post-card--featured {
   padding: 32px;
+  background-color: var(--post-card);
 }
 
 .post-card__image {
@@ -45,7 +46,7 @@
 
 .featured-info__title {
   font: var(--font-h3);
-  color: var(--color-black);
+  color: var(--text-primary);
   margin-bottom: 16px;
 }
 
@@ -58,7 +59,7 @@
 /* Правый блок - All Posts */
 .all-posts__title {
   font: var(--font-h2);
-  color: var(--color-black);
+  color: var(--text-primary);
 }
 
 .posts-list {
@@ -75,7 +76,7 @@
 }
 
 .post-item:hover {
-  background-color: var(--color-light-yellow);
+  background-color: var(--block-hover);
 }
 
 .post-item__meta {
@@ -86,7 +87,7 @@
 
 .post-item__title {
   font: var(--font-h4);
-  color: var(--color-black);
+  color: var(--text-primary);
 }
 
 .all-posts__view-all {

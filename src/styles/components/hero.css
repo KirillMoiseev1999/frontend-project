@@ -24,28 +24,28 @@
 /* 1. Posted on startup */
 .hero__category {
   font: var(--font-label);
-  color: var(--color-light);
+  color: var(--bg-primary);
   margin-bottom: 24px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .hero__category-accent {
-  color: var(--color-light);
+  color: var(--bg-primary);
   font-weight: 600;
 }
 
 /* 2. Заголовок */
 .hero__title {
   font: var(--font-h1);
-  color: var(--color-light);
+  color: var(--bg-primary);
   margin-bottom: 24px;
 }
 
 /* 3. Автор и дата */
 .hero__meta {
   font: var(--font-body-01);
-  color: var(--color-light);
+  color: var(--bg-primary);
   margin-bottom: 16px;
   font-weight: 300;
 }
@@ -62,7 +62,7 @@
 /* 4. Описание */
 .hero__description {
   font: var(--font-body-01);
-  color: var(--color-light);
+  color: var(--bg-primary);
   margin-bottom: 48px;
   line-height: 28px;
   font-weight: 100;

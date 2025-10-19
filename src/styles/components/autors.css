@@ -5,7 +5,7 @@
 
 .authors-section__title {
   font: var(--font-h2);
-  color: var(--color-black);
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 48px;
 }
@@ -20,7 +20,7 @@
 
 .author-card {
   height: 324px;
-  background: var(--color-white);
+  background: var(--post-card);
   border: 1px solid rgb(109 110 118 / 30%);
   padding: 40px 28px;
   display: flex;
@@ -32,8 +32,8 @@
 }
 
 .author-card:hover {
-  background: var(--color-light-yellow);
-  border-color: var(--color-yellow);
+  background: var(--block-hover);
+  border-color: var(--border);
 }
 
 .author-card__photo {
@@ -57,7 +57,7 @@
   font-size: 28px;
   line-height: 143%;
   letter-spacing: -0.04em;
-  color: var(--color-black);
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 

@@ -1,41 +1,45 @@
-// theme-toggle.js
-class ThemeToggle {
+class ThemeSwitcher {
   constructor() {
-    this.toggleBtn = document.getElementById('themeToggle');
+    this.themeToggle = document.getElementById('themeToggle');
+    this.themeIcon = this.themeToggle.querySelector('.theme-toggle__icon');
     this.currentTheme = localStorage.getItem('theme') || 'light';
-
+    
     this.init();
   }
-
+  
   init() {
-    // Установи начальную тему
+    // Устанавливаем начальную тему
     this.setTheme(this.currentTheme);
-
-    // Добавь обработчик клика
-    this.toggleBtn.addEventListener('click', () => {
+    
+    // Вешаем обработчик на кнопку
+    this.themeToggle.addEventListener('click', () => {
       this.toggleTheme();
     });
   }
-
+  
+  toggleTheme() {
+    this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
+    this.setTheme(this.currentTheme);
+    this.saveTheme();
+  }
+  
   setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    this.updateButton(theme);
+    
+    // Обновляем иконку
+    if (theme === 'dark') {
+      this.themeIcon.textContent = '☀️';
+    } else {
+      this.themeIcon.textContent = '🌙';
+    }
   }
-
-  toggleTheme() {
-    const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
-    this.setTheme(newTheme);
-    this.currentTheme = newTheme;
-  }
-
-  updateButton(theme) {
-    const icon = this.toggleBtn.querySelector('.theme-toggle__icon');
-    icon.textContent = theme === 'light' ? '🌙' : '☀️';
+  
+  saveTheme() {
+    localStorage.setItem('theme', this.currentTheme);
   }
 }
 
 // Инициализация когда DOM загружен
 document.addEventListener('DOMContentLoaded', () => {
-  new ThemeToggle();
+  new ThemeSwitcher();
 });

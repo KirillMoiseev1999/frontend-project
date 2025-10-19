@@ -1,5 +1,6 @@
 @import './styles/global/media.css';
 @import './styles/colors/colors.css';
+@import './styles/colors/dark.css';
 @import './styles/normalize.css';
 @import './styles/global/utility.css';
 @import './styles/components/container.css';
@@ -15,7 +16,7 @@
 @import './styles/components/logos.css';
 @import './styles/components/testimonials.css';
 @import './styles/components/join.css';
-@import './src/styles/components/footer.css';
+@import './styles/components/footer.css';
 
 /* <link rel="stylesheet" href="src/styles/normalize.css" />
     <link rel="stylesheet" href="src/styles/colors/colors.css" /> 

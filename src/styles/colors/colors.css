@@ -1,5 +1,29 @@
 :root {
-  /* Цвета */
+  /* Базовые цвета (не меняются в темах) */
+  --color-black: #232536;
+  --color-yellow: #ffd050;
+  --color-purple: #592ea9;
+  --color-dark-grey: #4c4c4c;
+  --color-medium-grey: #6d6e76;
+  --color-light-grey: #f4f4f4;
+  --color-lavender: #f4f0f8;
+  --color-light-yellow: #fbf6ea;
+  --color-white: #fff;
+  --color-total-black: #000;
+
+  /* Семантические переменные по умолчанию (светлая тема) */
+  --bg-primary: var(--color-white);
+  --text-primary: var(--color-black);
+  --block-hover: var(--color-light-yellow);
+  --post-card: var(--color-white);
+  --containerabout: var(--color-lavender);
+  --border: var(--color-yellow);
+  --bg-secondary: var(--color-light-grey);
+  --text-secondary: var(--color-medium-grey);
+  --border-color: rgb(109 110 118 / 30%);
+}
+
+/* :root {
   --color-black: #232536;
   --color-yellow: #ffd050;
   --color-purple: #592ea9;
@@ -9,4 +33,4 @@
   --color-lavender: #f4f0f8;
   --color-light-yellow: #fbf6ea;
   --color-light: #fff;
-}
+} */
