@@ -1,4 +1,4 @@
-.containerabout {
+.about-section__container {
   height: auto;
   min-height: 500px;
   width: 100%;
@@ -85,7 +85,7 @@
   line-height: 28px;
 }
 
-.link--purple {
+.about-us__link {
   color: var(--color-purple);
   font: var(--font-label);
   font-weight: 600;
@@ -96,16 +96,16 @@
   transition: color 0.3s ease;
 }
 
-.link--purple:hover {
+.about-us__link:hover {
   color: var(--color-black);
 }
 
-.link__arrow {
+.about-us__linkarrow {
   font-weight: 700;
   transition: transform 0.3s ease;
 }
 
-.link--purple:hover .link__arrow {
+.about-us__link:hover .about-us__linkarrow {
   transform: translateX(4px);
 }
 
@@ -113,7 +113,7 @@
 
 /* Большие планшеты и маленькие десктопы (1024px - 1289px) */
 @media (width <= 1289px) {
-  .containerabout {
+  .about-section__container {
     min-height: 450px;
   }
 
@@ -142,7 +142,7 @@
 
 /* Планшеты (768px - 1023px) */
 @media (width <= 1023px) {
-  .containerabout {
+  .about-section__container {
     min-height: 400px;
   }
 
@@ -179,7 +179,7 @@
 
 /* Большие мобильные (576px - 767px) */
 @media (width <= 767px) {
-  .containerabout {
+  .about-section__container {
     min-height: auto;
   }
 
@@ -222,7 +222,7 @@
     line-height: 1.4;
   }
 
-  .link--purple {
+  .about-us__link {
     justify-content: center;
   }
 }
