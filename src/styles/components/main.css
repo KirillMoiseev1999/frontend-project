@@ -8,10 +8,18 @@ main {
   width: 100%;
 }
 
-.skipcontainer {
+.section-py-128 {
+  padding-top: 128px;
+}
+
+.section-py-96 {
+  padding-top: 96px;
+}
+
+/* .skipcontainer {
   height: 128px;
 }
 
 .skipcontainer96 {
   height: 96px;
-}
+} */

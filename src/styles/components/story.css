@@ -1,31 +1,12 @@
 .story-section {
-  padding: 0 80px;
-  height: 705px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.story-section .container {
-  width: 100%;
-  max-width: 1290px;
-  margin: 0 auto;
 }
 
 .story-section__content {
+  padding: 0 80px;
   display: flex;
   align-items: center;
   position: relative;
-  height: 705px;
-}
-
-/* Левая часть - изображение */
-.story-section__image {
-  width: 949px;
-  height: 705px;
-  position: absolute;
-  left: 0;
 }
 
 .story-section__img {
@@ -36,13 +17,12 @@
 
 /* Правая часть - перекрывающий контейнер */
 .story-section__info {
-  width: 706px;
-  height: 584px;
+  width: calc(50% - 80px); /* Вычитаем правый padding родителя */
   background: var(--post-card);
   position: absolute;
-  right: 0;
+  right: 80px; /* Учитываем padding родителя */
   bottom: 0;
-  padding: 6vw 0 6vw 6vw;
+  padding: 5vw 0 5vw 5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,8 +62,8 @@
 .button--discover {
   background: var(--color-yellow);
   color: var(--color-black);
-  padding: 16px 48px;
-  width: 270px;
+  padding: 16px 11%;
+  width: 55%;
   height: 56px;
   border: none;
   font: var(--font-label);
@@ -120,12 +100,8 @@
 }
 
 @media (width <= 768px) {
-  .story-section {
-    height: auto;
-    padding: 40px 20px;
-  }
-
   .story-section__content {
+    padding: 40px 20px;
     flex-direction: column;
     height: auto;
   }
