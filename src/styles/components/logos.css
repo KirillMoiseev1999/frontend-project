@@ -1,32 +1,24 @@
-.logos-section {
-  padding: 0 80px;
-  height: auto;
-  min-height: 52px;
+.logos {
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
-.logos-section .container {
-  width: 100%;
-}
-
 .logos-section__content {
+  padding: 0 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: auto;
-  min-height: 52px;
 }
 
 .logos-section__label {
-  width: 135px;
-  height: 52px;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.feature_in {
+.logos-section__feature {
   font: var(--font-h5);
   color: #6d6e76;
   font-weight: 700;
@@ -34,7 +26,7 @@
   line-height: 133%;
 }
 
-.we_are {
+.logos-section__we {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -45,7 +37,6 @@
 
 .logos-wrapper {
   flex: 1;
-  margin-left: 87px;
   height: 32px;
   display: flex;
   align-items: center;
@@ -92,7 +83,7 @@
   }
 
   .logos-wrapper {
-    margin-left: 60px;
+    padding-left: 60px;
   }
 
   .logos-wrapper__list {
@@ -107,7 +98,7 @@
   }
 
   .logos-wrapper {
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   .logos-wrapper__list {
@@ -145,7 +136,7 @@
   }
 
   .logos-wrapper {
-    margin-left: 0;
+    padding-left: 0;
     width: 100%;
     height: auto;
   }

@@ -1,8 +1,3 @@
-.footer .container {
-  max-width: 1290px;
-  margin: 0 auto;
-}
-
 .footer-section {
   background: var(--color-black);
   padding: 60px 80px;
@@ -17,18 +12,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 54px;
-}
-
-.footer__logo-image {
-  height: 32px;
-  width: auto;
+  padding-bottom: 54px;
 }
 
 .footer__nav-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -51,11 +39,9 @@
 .footer__cta {
   background: rgb(255 255 255 / 5%);
   height: auto;
-  min-height: 256px;
   padding: 80px 4vw;
   display: flex;
   align-items: center;
-  margin-bottom: 48px;
 }
 
 .footer__cta-content {
@@ -64,7 +50,6 @@
   gap: 20px;
   position: relative;
   z-index: 2;
-  width: 100%;
 }
 
 .footer__cta-title {
@@ -142,7 +127,7 @@
   line-height: 175%;
   color: var(--color-white);
   opacity: 0.7;
-  margin: 0;
+  padding: 0;
 }
 
 .footer__social {
@@ -165,7 +150,7 @@
 
 /* Большие планшеты (1024px - 1289px) */
 @media (width <= 1289px) {
-  .footer {
+  .footer-section {
     padding: 50px 60px;
   }
 
@@ -190,7 +175,7 @@
 
 /* Планшеты (768px - 1023px) */
 @media (width <= 1023px) {
-  .footer {
+  .footer-section {
     padding: 40px;
   }
 
@@ -198,7 +183,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .footer__nav-list {
@@ -208,7 +193,7 @@
 
   .footer__cta {
     padding: 60px 30px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .footer__cta-title {
@@ -239,13 +224,13 @@
 
 /* Большие мобильные (576px - 767px) */
 @media (width <= 767px) {
-  .footer {
+  .footer-section {
     padding: 30px 20px;
   }
 
   .footer__cta {
     padding: 40px 20px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .footer__cta-title {
@@ -279,7 +264,7 @@
 
 /* Мобильные (375px - 575px) */
 @media (width <= 575px) {
-  .footer {
+  .footer-section {
     padding: 25px 15px;
   }
 
@@ -320,7 +305,7 @@
 
 /* Маленькие мобильные (до 374px) */
 @media (width <= 374px) {
-  .footer {
+  .footer-section {
     padding: 20px 10px;
   }
 

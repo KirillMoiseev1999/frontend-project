@@ -2,11 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .join-team .container {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -14,13 +12,10 @@
 .join-team__content {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .join-team__card {
-  width: 100%;
   max-width: 414px;
-  height: 256px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +32,7 @@
   letter-spacing: -0.06em;
   text-align: center;
   color: var(--text-primary);
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .join-team__description {
@@ -47,7 +42,7 @@
   line-height: 175%;
   text-align: center;
   color: var(--color-medium-grey);
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .button--join {

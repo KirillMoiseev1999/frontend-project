@@ -2,15 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  max-width: 1440px;
-  margin: 0 80px;
+  padding: 0 80px;
 }
 
 /* Левый блок - Featured Post */
 .featured-post__title {
   font: var(--font-h2);
   color: var(--text-primary);
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .featured-post__wrapper {
@@ -26,12 +25,12 @@
 
 .post-card__image {
   object-fit: cover;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .post-card__meta {
   color: var(--color-medium-grey);
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .post-card__author-name {
@@ -40,14 +39,13 @@
 }
 
 .featured-info {
-  height: 152px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .featured-info__title {
   font: var(--font-h3);
   color: var(--text-primary);
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .featured-info__description {
@@ -65,7 +63,7 @@
 .all-posts__lists {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .post-item {
@@ -82,7 +80,7 @@
 .post-item__meta {
   font: var(--font-label);
   color: var(--color-medium-grey);
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .post-item__title {
@@ -121,7 +119,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .post-item__author {
@@ -133,7 +131,7 @@
 /* Большие планшеты и маленькие десктопы (1024px - 1289px) */
 @media (width <= 1289px) {
   .featured-posts__content {
-    margin: 0 60px;
+    padding: 0 60px;
     gap: 28px;
   }
 
@@ -148,7 +146,7 @@
   .featured-info {
     height: auto;
     min-height: 140px;
-    margin-bottom: 28px;
+    padding-bottom: 28px;
   }
 
   .featured-info__title {
@@ -163,7 +161,7 @@
 /* Планшеты (768px - 1023px) */
 @media (width <= 1023px) {
   .featured-posts__content {
-    margin: 0 40px;
+    padding: 0 40px;
     gap: 24px;
   }
 
@@ -176,17 +174,17 @@
   }
 
   .post-card__image {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   .featured-info {
     height: auto;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   .featured-info__title {
     font-size: 1.3rem;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
   }
 
   .featured-info__description {
@@ -212,7 +210,7 @@
 @media (width <= 767px) {
   .featured-posts__content {
     grid-template-columns: 1fr;
-    margin: 0 20px;
+    padding: 0 20px;
     gap: 32px;
   }
 
@@ -228,12 +226,12 @@
   .all-posts__title {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   .featured-info {
     height: auto;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .featured-info__title {
@@ -251,7 +249,7 @@
   }
 
   .posts-list {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   .post-item {
@@ -267,13 +265,12 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   .button--read-more {
-    padding: 12px 24px;
     font-size: 0.85rem;
-    margin: 0 auto;
+    padding: 0;
   }
 
   .all-posts__view-all {
@@ -284,7 +281,7 @@
 /* Мобильные (375px - 575px) */
 @media (width <= 575px) {
   .featured-posts__content {
-    margin: 0 15px;
+    padding: 0 15px;
     gap: 24px;
   }
 
@@ -293,13 +290,13 @@
   }
 
   .post-card__image {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .featured-post__title,
   .all-posts__title {
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .featured-info__title {
@@ -332,7 +329,7 @@
 /* Маленькие мобильные (до 374px) */
 @media (width <= 374px) {
   .featured-posts__content {
-    margin: 0 10px;
+    padding: 0 10px;
   }
 
   .post-card--featured {
