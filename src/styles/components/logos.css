@@ -105,14 +105,6 @@
     gap: 24px;
     justify-content: center;
   }
-
-  .feature_in {
-    font-size: 20px;
-  }
-
-  .we_are {
-    font-size: 12px;
-  }
 }
 
 /* Большие мобильные (576px - 767px) */
@@ -164,14 +156,6 @@
     gap: 16px;
   }
 
-  .feature_in {
-    font-size: 18px;
-  }
-
-  .we_are {
-    font-size: 11px;
-  }
-
   .logo-item {
     height: 24px;
   }
@@ -185,10 +169,6 @@
 
   .logos-wrapper__list {
     gap: 12px;
-  }
-
-  .feature_in {
-    font-size: 16px;
   }
 
   .logo-item {

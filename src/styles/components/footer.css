@@ -88,25 +88,6 @@
   border-color: var(--color-white);
 }
 
-.button--subscribe-footer {
-  background: var(--color-yellow);
-  padding: 16px 48px;
-  width: 179px;
-  height: 56px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 133%;
-  color: #232536;
-}
-
-.button--subscribe-footer:hover {
-  background: #e6b800;
-}
-
 .footer__info {
   display: flex;
   flex-direction: row;
@@ -118,8 +99,26 @@
   flex-direction: column;
 }
 
-.footer__address,
-.footer__email,
+.footer__address {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--color-white);
+  opacity: 0.7;
+  padding: 0;
+}
+
+.footer__email {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--color-white);
+  opacity: 0.7;
+  padding: 0;
+}
+
 .footer__phone {
   font-family: var(--font-family);
   font-weight: 400;
@@ -133,16 +132,20 @@
 .footer__social {
   display: flex;
   gap: 16px;
-}
-
-.footer__social .social-link img {
   width: 26px;
   height: 26px;
   filter: grayscale(10%) brightness(2);
   transition: filter 0.3s ease;
 }
 
-.footer__social .social-link:hover img {
+.footer__social-link {
+  width: 26px;
+  height: 26px;
+  filter: grayscale(10%) brightness(2);
+  transition: filter 0.3s ease;
+}
+
+.footer__social-link:hover {
   filter: grayscale(10%) brightness(0.5);
 }
 
@@ -166,10 +169,6 @@
 
   .footer__input {
     width: 60%;
-  }
-
-  .button--subscribe-footer {
-    width: 35%;
   }
 }
 
@@ -210,10 +209,6 @@
     width: 100%;
   }
 
-  .button--subscribe-footer {
-    width: 100%;
-  }
-
   .footer__info {
     flex-direction: column;
     align-items: center;
@@ -250,13 +245,14 @@
     font-size: 14px;
   }
 
-  .button--subscribe-footer {
-    height: 50px;
-    font-size: 16px;
+  .footer__address {
+    font-size: 14px;
   }
 
-  .footer__address,
-  .footer__email,
+  .footer__email {
+    font-size: 14px;
+  }
+
   .footer__phone {
     font-size: 14px;
   }
@@ -287,17 +283,13 @@
     padding: 0 12px;
   }
 
-  .button--subscribe-footer {
-    height: 45px;
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-
   .footer__social {
     gap: 12px;
+    width: 22px;
+    height: 22px;
   }
 
-  .footer__social .social-link img {
+  .footer__social-link {
     width: 22px;
     height: 22px;
   }
@@ -322,13 +314,14 @@
     font-size: 13px;
   }
 
-  .button--subscribe-footer {
-    height: 40px;
+  .footer__address {
     font-size: 13px;
   }
 
-  .footer__address,
-  .footer__email,
+  .footer__email {
+    font-size: 13px;
+  }
+
   .footer__phone {
     font-size: 13px;
   }

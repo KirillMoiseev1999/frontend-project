@@ -59,30 +59,6 @@
   padding-bottom: 32px;
 }
 
-.button--discover {
-  background: var(--color-yellow);
-  color: var(--color-black);
-  padding: 16px 11%;
-  width: 55%;
-  height: 56px;
-  border: none;
-  font: var(--font-label);
-  font-weight: 800;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.button--discover:hover {
-  background: #e6b800;
-}
-
-.button__arrow {
-  font-weight: 700;
-}
-
 /* ===== МЕДИА ЗАПРОСЫ ДЛЯ STORY SECTION ===== */
 @media (width <= 1290px) {
   .story-section__image {
@@ -125,8 +101,7 @@
     height: auto;
   }
 
-  .story-section__image,
-  .story-section__info {
+  .story-section__image {
     position: static;
     width: 100%;
     height: auto;
@@ -134,6 +109,10 @@
   }
 
   .story-section__info {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
     padding-top: -100px;
   }
 

@@ -18,26 +18,6 @@
   border: 1px solid rgb(109 110 118 / 30%);
 }
 
-.post-card--featured {
-  padding: 32px;
-  background-color: var(--post-card);
-}
-
-.post-card__image {
-  object-fit: cover;
-  padding-bottom: 32px;
-}
-
-.post-card__meta {
-  color: var(--color-medium-grey);
-  padding-bottom: 16px;
-}
-
-.post-card__author-name {
-  font: var(--font-label);
-  color: var(--color-purple);
-}
-
 .featured-info {
   padding-bottom: 32px;
 }
@@ -54,78 +34,6 @@
   line-height: 28px;
 }
 
-/* Правый блок - All Posts */
-.all-posts__title {
-  font: var(--font-h2);
-  color: var(--text-primary);
-}
-
-.all-posts__lists {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 32px;
-}
-
-.post-item {
-  padding: 32px 0 24px 32px;
-  border-bottom: 1px solid var(--color-border);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.post-item:hover {
-  background-color: var(--block-hover);
-}
-
-.post-item__meta {
-  font: var(--font-label);
-  color: var(--color-medium-grey);
-  padding-bottom: 8px;
-}
-
-.post-item__title {
-  font: var(--font-h4);
-  color: var(--text-primary);
-}
-
-.all-posts__view-all {
-  color: var(--color-purple);
-  font: var(--font-body-01);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-/* Кнопка Read More */
-.button--read-more {
-  background: var(--color-yellow);
-  color: var(--color-black);
-  padding: 16px 32px;
-  border: none;
-  font: var(--font-label);
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.button--read-more:hover {
-  background: #e6b800;
-}
-
-.all-post__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 32px;
-}
-
-.post-item__author {
-  color: var(--color-purple);
-}
-
 /* ===== МЕДИА ЗАПРОСЫ ДЛЯ FEATURED POSTS ===== */
 
 /* Большие планшеты и маленькие десктопы (1024px - 1289px) */
@@ -139,10 +47,6 @@
     width: 50vw;
   }
 
-  .post-card--featured {
-    padding: 28px;
-  }
-
   .featured-info {
     height: auto;
     min-height: 140px;
@@ -151,10 +55,6 @@
 
   .featured-info__title {
     font-size: 1.5rem;
-  }
-
-  .post-item {
-    padding: 28px 0 20px 28px;
   }
 }
 
@@ -167,14 +67,6 @@
 
   .featured-post__wrapper {
     width: 45vw;
-  }
-
-  .post-card--featured {
-    padding: 24px;
-  }
-
-  .post-card__image {
-    padding-bottom: 24px;
   }
 
   .featured-info {
@@ -191,19 +83,6 @@
     font-size: 0.9rem;
     line-height: 1.5;
   }
-
-  .post-item {
-    padding: 24px 0 16px 24px;
-  }
-
-  .post-item__title {
-    font-size: 1.1rem;
-  }
-
-  .button--read-more {
-    padding: 14px 28px;
-    font-size: 0.9rem;
-  }
 }
 
 /* Большие мобильные (576px - 767px) */
@@ -218,12 +97,7 @@
     width: 100%;
   }
 
-  .post-card--featured {
-    padding: 20px;
-  }
-
-  .featured-post__title,
-  .all-posts__title {
+  .featured-post__title {
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 24px;
@@ -243,39 +117,6 @@
     text-align: center;
     font-size: 0.85rem;
   }
-
-  .post-card__meta {
-    text-align: center;
-  }
-
-  .posts-list {
-    padding-bottom: 24px;
-  }
-
-  .post-item {
-    padding: 20px 16px;
-    text-align: center;
-  }
-
-  .post-item__title {
-    font-size: 1rem;
-  }
-
-  .all-post__header {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding-bottom: 24px;
-  }
-
-  .button--read-more {
-    font-size: 0.85rem;
-    padding: 0;
-  }
-
-  .all-posts__view-all {
-    justify-content: center;
-  }
 }
 
 /* Мобильные (375px - 575px) */
@@ -285,16 +126,7 @@
     gap: 24px;
   }
 
-  .post-card--featured {
-    padding: 16px;
-  }
-
-  .post-card__image {
-    padding-bottom: 20px;
-  }
-
-  .featured-post__title,
-  .all-posts__title {
+  .featured-post__title {
     font-size: 1.3rem;
     padding-bottom: 20px;
   }
@@ -307,23 +139,6 @@
     font-size: 0.8rem;
     line-height: 1.4;
   }
-
-  .post-item {
-    padding: 16px 12px;
-  }
-
-  .post-item__meta {
-    font-size: 0.8rem;
-  }
-
-  .post-item__title {
-    font-size: 0.9rem;
-  }
-
-  .button--read-more {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-  }
 }
 
 /* Маленькие мобильные (до 374px) */
@@ -332,25 +147,11 @@
     padding: 0 10px;
   }
 
-  .post-card--featured {
-    padding: 12px;
-  }
-
-  .featured-post__title,
-  .all-posts__title {
+  .featured-post__title {
     font-size: 1.2rem;
   }
 
   .featured-info__title {
     font-size: 1rem;
-  }
-
-  .post-item {
-    padding: 12px 8px;
-  }
-
-  .button--read-more {
-    padding: 8px 16px;
-    font-size: 0.75rem;
   }
 }

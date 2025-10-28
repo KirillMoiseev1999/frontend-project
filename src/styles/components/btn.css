@@ -1,0 +1,55 @@
+/* Кнопка Read More */
+.button--read-more {
+  background: var(--color-yellow);
+  color: var(--color-black);
+  padding: 16px 32px;
+  border: none;
+  font: var(--font-label);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button--read-more:hover {
+  background: #e6b800;
+}
+
+/* Большие планшеты и маленькие десктопы (1024px - 1289px) */
+
+/* Планшеты (768px - 1023px) */
+@media (width <= 1023px) {
+  .button--read-more {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Большие мобильные (576px - 767px) */
+@media (width <= 767px) {
+  .button--read-more {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
+/* Мобильные (375px - 575px) */
+@media (width <= 575px) {
+  .button--read-more {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Маленькие мобильные (до 374px) */
+@media (width <= 374px) {
+  .button--read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    width: 120px;
+  }
+}

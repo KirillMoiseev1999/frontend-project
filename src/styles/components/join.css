@@ -45,28 +45,6 @@
   padding-bottom: 32px;
 }
 
-.button--join {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-yellow);
-  color: var(--color-black);
-  width: 174px;
-  height: 56px;
-  border: none;
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 133%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button--join:hover {
-  background: #e6b800;
-}
-
 /* ===== МЕДИА ЗАПРОСЫ ДЛЯ JOIN ===== */
 @media (width <= 768px) {
   .join-team {

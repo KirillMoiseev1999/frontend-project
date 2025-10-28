@@ -72,20 +72,17 @@
   align-items: center;
 }
 
-.social-link {
+.autor-social {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease;
-}
-
-.social-link:hover {
-  opacity: 0.7;
-}
-
-.social-link img {
   width: 16px;
   height: 16px;
+}
+
+.autor-social:hover {
+  opacity: 0.7;
 }
 
 /* ===== МЕДИА ЗАПРОСЫ ДЛЯ AUTORS SECTION ===== */
@@ -97,11 +94,11 @@
 }
 
 @media (width <= 768px) {
-  .authors-section {
-    padding: 40px;
-  }
-
   .authors-section__grid {
     grid-template-columns: 1fr;
+  }
+
+  .author-card__name {
+    font-size: 15px;
   }
 }

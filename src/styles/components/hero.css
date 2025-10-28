@@ -67,28 +67,6 @@
   bottom: 0;
 }
 
-.button--read-more {
-  background: var(--color-yellow);
-  color: var(--color-black);
-  padding: 16px 32px;
-  border: none;
-  font: var(--font-label);
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.button--read-more:hover {
-  background: #e6b800;
-}
-
-.button__arrow {
-  font-weight: 700;
-}
-
 /* ===== МЕДИА ЗАПРОСЫ ДЛЯ HERO ===== */
 
 /* Большие планшеты и маленькие десктопы (1024px - 1289px) */
@@ -164,11 +142,6 @@
     position: static;
     padding-top: 30px;
   }
-
-  .button--read-more {
-    padding: 14px 28px;
-    font-size: 0.9rem;
-  }
 }
 
 /* Большие мобильные (576px - 767px) */
@@ -210,12 +183,6 @@
     line-height: 1.5;
     padding-bottom: 30px;
   }
-
-  .button--read-more {
-    font-size: 0.85rem;
-    padding: 0;
-    justify-content: center;
-  }
 }
 
 /* Мобильные (375px - 575px) */
@@ -249,13 +216,6 @@
     line-height: 1.4;
     padding-bottom: 25px;
   }
-
-  .button--read-more {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-    width: 100%;
-    max-width: 200px;
-  }
 }
 
 /* Маленькие мобильные (до 374px) */
@@ -275,10 +235,5 @@
   .hero__description {
     font-size: 0.75rem;
     line-height: 1.4;
-  }
-
-  .button--read-more {
-    padding: 8px 16px;
-    font-size: 0.75rem;
   }
 }

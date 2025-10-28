@@ -51,23 +51,6 @@
   color: var(--color-yellow);
 }
 
-.button--subscribe {
-  background: white;
-  color: var(--color-black);
-  padding: 0.75rem 2.5rem;
-  border: none;
-  border-radius: 0;
-  font: var(--font-label);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button--subscribe:hover {
-  background: var(--color-yellow);
-  color: var(--color-black);
-}
-
 /* ===== МЕДИА ЗАПРОСЫ ===== */
 
 /* Большие планшеты и маленькие десктопы (1024px - 1289px) */
@@ -76,25 +59,12 @@
     padding: 0 60px;
   }
 
-  .mobile-menu-btn {
-    display: none;
-  }
-
-  /* Мобильное меню */
-  .mobile-menu {
-    display: none;
-  }
-
   .header__bloc {
     width: 55%;
   }
 
   .header__nav-list {
     gap: 1.5rem;
-  }
-
-  .button--subscribe {
-    padding: 0.75rem 2rem;
   }
 }
 
@@ -117,13 +87,7 @@
     font-size: 0.9rem;
   }
 
-  .button--subscribe {
-    padding: 0.6rem 1.5rem;
-    height: 50px;
-    font-size: 0.9rem;
-  }
-
-  .space {
+  .header-space {
     width: 20px;
   }
 }
@@ -139,66 +103,13 @@
     display: none;
   }
 
-  .space {
+  .header-space {
     display: none;
   }
 
   .header__bloc {
     width: auto;
     gap: 1rem;
-  }
-
-  .mobile-menu-btn {
-    display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-  }
-
-  .mobile-menu {
-    display: block;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 60px);
-    background: var(--color-black);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 999;
-  }
-
-  .mobile-menu.active {
-    transform: translateX(0);
-  }
-
-  .mobile-nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    list-style: none;
-  }
-
-  .mobile-nav-link {
-    color: white;
-    text-decoration: none;
-    font: var(--font-body-01);
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-
-  .mobile-nav-link:hover {
-    color: var(--color-yellow);
-  }
-
-  .button--subscribe {
-    padding: 0.5rem 1.2rem;
-    height: 45px;
-    font-size: 0.85rem;
   }
 }
 
@@ -211,28 +122,12 @@
   .header__logo {
     height: 24px;
   }
-
-  .button--subscribe {
-    padding: 0.4rem 1rem;
-    height: 40px;
-    font-size: 0.8rem;
-  }
-
-  .mobile-menu-btn {
-    font-size: 1.3rem;
-    padding: 0.3rem;
-  }
 }
 
 /* Маленькие мобильные (до 374px) */
 @media (width <= 374px) {
   .header {
     padding: 0 10px;
-  }
-
-  .button--subscribe {
-    padding: 0.3rem 0.8rem;
-    font-size: 0.75rem;
   }
 
   .header__logo {
